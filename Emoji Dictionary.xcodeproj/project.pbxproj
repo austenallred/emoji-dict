@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F9D4FEDD1A33986300F610F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4FEDC1A33986300F610F6 /* AppDelegate.swift */; };
-		F9D4FEDF1A33986300F610F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4FEDE1A33986300F610F6 /* ViewController.swift */; };
 		F9D4FEE21A33986300F610F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D4FEE01A33986300F610F6 /* Main.storyboard */; };
 		F9D4FEE41A33986300F610F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D4FEE31A33986300F610F6 /* Images.xcassets */; };
 		F9D4FEE71A33986300F610F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9D4FEE51A33986300F610F6 /* LaunchScreen.xib */; };
 		F9D4FEF31A33986300F610F6 /* Emoji_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4FEF21A33986300F610F6 /* Emoji_DictionaryTests.swift */; };
+		F9D4FEFD1A339B1400F610F6 /* EmojiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4FEFC1A339B1400F610F6 /* EmojiListViewController.swift */; };
+		F9D4FEFF1A33C69300F610F6 /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D4FEFE1A33C69300F610F6 /* EmojiDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		F9D4FED71A33986300F610F6 /* Emoji Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D4FEDB1A33986300F610F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9D4FEDC1A33986300F610F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9D4FEDE1A33986300F610F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9D4FEE11A33986300F610F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9D4FEE31A33986300F610F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F9D4FEE61A33986300F610F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F9D4FEEC1A33986300F610F6 /* Emoji DictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji DictionaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D4FEF11A33986300F610F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9D4FEF21A33986300F610F6 /* Emoji_DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_DictionaryTests.swift; sourceTree = "<group>"; };
+		F9D4FEFC1A339B1400F610F6 /* EmojiListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiListViewController.swift; sourceTree = "<group>"; };
+		F9D4FEFE1A33C69300F610F6 /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				F9D4FEDC1A33986300F610F6 /* AppDelegate.swift */,
-				F9D4FEDE1A33986300F610F6 /* ViewController.swift */,
+				F9D4FEFC1A339B1400F610F6 /* EmojiListViewController.swift */,
+				F9D4FEFE1A33C69300F610F6 /* EmojiDetailViewController.swift */,
 				F9D4FEE01A33986300F610F6 /* Main.storyboard */,
 				F9D4FEE31A33986300F610F6 /* Images.xcassets */,
 				F9D4FEE51A33986300F610F6 /* LaunchScreen.xib */,
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					F9D4FED61A33986300F610F6 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4PPGZNVG8G;
 					};
 					F9D4FEEB1A33986300F610F6 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,8 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9D4FEDF1A33986300F610F6 /* ViewController.swift in Sources */,
 				F9D4FEDD1A33986300F610F6 /* AppDelegate.swift in Sources */,
+				F9D4FEFF1A33C69300F610F6 /* EmojiDetailViewController.swift in Sources */,
+				F9D4FEFD1A339B1400F610F6 /* EmojiListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
